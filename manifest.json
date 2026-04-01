@@ -1,0 +1,95 @@
+{
+  "updated_at": "2026-04-01",
+  "skills": [
+    {
+      "name": "artboardv2",
+      "version": 1,
+      "jtbd": "Make deterministic viewer/artboard changes -- auto-audits page architecture before writing code"
+    },
+    {
+      "name": "ask",
+      "version": 1,
+      "jtbd": "Refine ideas one question at a time -- UX designer and engineer collaborative flow"
+    },
+    {
+      "name": "box-sync-pull",
+      "version": 1,
+      "jtbd": "Pull the latest shared skills from box-design into your local setup"
+    },
+    {
+      "name": "box-sync-push",
+      "version": 1,
+      "jtbd": "Push new or updated skills to the shared box-design repo via PR"
+    },
+    {
+      "name": "compact2",
+      "version": 1,
+      "jtbd": "Save session context with decision arc analysis -- survives /clear"
+    },
+    {
+      "name": "cr",
+      "version": 1,
+      "jtbd": "Carmack-style code review -- task breakdown, wireframes, balloon prevention"
+    },
+    {
+      "name": "deslop",
+      "version": 1,
+      "jtbd": "Remove AI-generated code slop from the current branch diff"
+    },
+    {
+      "name": "frontend-design",
+      "version": 1,
+      "jtbd": "Create distinctive, production-grade frontend interfaces -- no generic AI aesthetics"
+    },
+    {
+      "name": "loss-function",
+      "version": 1,
+      "jtbd": "Figma-to-code pipeline with 5-phase loss function evaluation"
+    },
+    {
+      "name": "prd",
+      "version": 1,
+      "jtbd": "Create canonical UX documentation with pure user language -- no code speak"
+    },
+    {
+      "name": "pseudocode",
+      "version": 1,
+      "jtbd": "Generate 50-line pseudocode for components with file paths and dev notes"
+    },
+    {
+      "name": "recall2",
+      "version": 1,
+      "jtbd": "Load saved session context and decision arc history back into conversation"
+    },
+    {
+      "name": "rethink",
+      "version": 1,
+      "jtbd": "Pause before implementing -- list simpler alternatives, catch over-engineering"
+    },
+    {
+      "name": "spec",
+      "version": 1,
+      "jtbd": "Generate UX spec from state tree with JTBD framework and QA checklist"
+    },
+    {
+      "name": "spidey",
+      "version": 1,
+      "jtbd": "Spidey-sense for task approach -- domain-aware query expansion to find relevant context"
+    },
+    {
+      "name": "spidey1",
+      "version": 1,
+      "jtbd": "RAG the current session -- search your conversation history for relevant context"
+    },
+    {
+      "name": "trans-spec",
+      "version": 1,
+      "jtbd": "Convert meeting transcript (VTT) into structured Notion page with takeaways and action items"
+    },
+    {
+      "name": "verify",
+      "version": 1,
+      "jtbd": "Visual browser verification -- recursive loss function check against design"
+    }
+  ]
+}
