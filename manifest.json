@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-04-01",
+  "updated_at": "2026-04-09",
   "skills": [
+    {
+      "name": "agentation",
+      "version": 1,
+      "jtbd": "Annotate a live UI element in the browser and copy DOM + component context into a Claude Code prompt"
+    },
     {
       "name": "artboardv2",
       "version": 1,
