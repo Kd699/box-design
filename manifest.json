@@ -52,6 +52,11 @@
       "jtbd": "Figma-to-code pipeline with 5-phase loss function evaluation"
     },
     {
+      "name": "mothership_terminal",
+      "version": 1,
+      "jtbd": "Orchestrate parallel Claude Code sessions -- spawn child terminals, monitor progress, verify output from a central dispatch window"
+    },
+    {
       "name": "prd",
       "version": 1,
       "jtbd": "Create canonical UX documentation with pure user language -- no code speak"
