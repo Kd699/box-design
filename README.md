@@ -88,8 +88,33 @@ Step-by-step instructions for Claude Code to follow.
 | `/trans-spec` | Meeting transcript (VTT) to structured Notion spec |
 | `/verify` | Visual browser verification against design |
 
+## Workflow demos
+
+### Mothership + parallel execution
+
+For larger tasks -- a full feature, a multi-file refactor, a design implementation -- you can split the work across several Claude Code sessions running at the same time. `/mothership_terminal` turns your current session into a dispatch window: it writes task prompts to files, opens new Terminal windows with Claude running in each, and polls for completion. You stay in the mothership and watch the status table update. When a terminal finishes, you verify its output from the same window and retry any failures without losing context on the other tasks.
+
+This works well for anything with clear seams: "fix the API layer while I fix the UI layer" or "build component A while component B is being spec'd". The key discipline is narrow scope per terminal -- one task, one output, one definition of done.
+
+### Super Whisper for fast input
+
+Long task prompts are tedious to type. Super Whisper (a third-party speech-to-text tool) lets you dictate the prompt instead. Speak the context, the files, the constraints -- Claude Code receives it as text. Combined with mothership dispatch, the loop is: speak the task, mothership writes the prompt file, terminal spawns and runs. For people who think faster than they type, this changes the pace significantly.
+
+### Agentation for UI work
+
+When you're staring at a visual bug, the hardest part is translating what you see into enough context for Claude to locate and fix it. Agentation solves this by letting you click the element directly in the browser. The plugin captures the component path, props, and DOM structure and formats it into a prompt-ready block. You paste that into Claude Code with a one-line description of the problem. No more hunting for component names or copying class strings.
+
+### Spidey for avoiding repeated mistakes
+
+`/spidey` runs before you start a task. It searches memory files and past task summaries for patterns relevant to what you're about to do -- previous decisions, known gotchas, patterns that worked. It surfaces these before the model has a chance to repeat an old mistake. Run it when starting anything non-trivial.
+
 ## Requirements
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI or desktop app
 - `gh` CLI (for sync commands)
 - Git
+- [Super Whisper](https://superwhisper.com) (optional, external tool -- recommended for speech-to-text input with Claude Code)
+
+## Coming soon
+
+- **Hooks**: programmatic prompt injections triggered by events in Claude Code (file save, task complete, etc.) -- an alternative to relying on the model to self-trigger behaviours. Lets you wire up consistent pre/post actions without putting them in the skill file.
