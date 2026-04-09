@@ -67,6 +67,7 @@ Step-by-step instructions for Claude Code to follow.
 
 | Skill | What it does |
 |-------|-------------|
+| `/agentation` | Annotate a UI element in the browser and copy DOM context into a prompt |
 | `/artboardv2` | Deterministic viewer/artboard changes -- auto-audits architecture first |
 | `/ask` | Refine ideas one question at a time (UX + eng collaborative flow) |
 | `/box-sync-pull` | Pull latest skills from this repo |
@@ -76,6 +77,7 @@ Step-by-step instructions for Claude Code to follow.
 | `/deslop` | Remove AI-generated code slop from branch diff |
 | `/frontend-design` | Production-grade frontend with distinctive design (no AI slop aesthetics) |
 | `/loss-function` | Figma-to-code pipeline with 5-phase evaluation |
+| `/mothership_terminal` | Orchestrate parallel Claude Code sessions -- spawn, monitor, verify |
 | `/prd` | Canonical UX documentation in pure user language |
 | `/pseudocode` | 50-line pseudocode for components with file paths |
 | `/recall2` | Load saved session context + decision arc history |
