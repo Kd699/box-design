@@ -1,6 +1,6 @@
 # /mothership_terminal -- Use Case Demo
 
-[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/fb4d60f74e2f4d3fb7570b1f6536ebe1-with-play.gif)](https://www.loom.com/share/fb4d60f74e2f4d3fb7570b1f6536ebe1)
+[![Watch the demo](../../assets/mothership-demo.png)](https://www.loom.com/share/fb4d60f74e2f4d3fb7570b1f6536ebe1)
 
 ## What the demo shows
 
