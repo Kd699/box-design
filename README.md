@@ -92,6 +92,8 @@ Step-by-step instructions for Claude Code to follow.
 
 ### Mothership + parallel execution
 
+[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/fb4d60f74e2f4d3fb7570b1f6536ebe1-with-play.gif)](https://www.loom.com/share/fb4d60f74e2f4d3fb7570b1f6536ebe1)
+
 For larger tasks -- a full feature, a multi-file refactor, a design implementation -- you can split the work across several Claude Code sessions running at the same time. `/mothership_terminal` turns your current session into a dispatch window: it writes task prompts to files, opens new Terminal windows with Claude running in each, and polls for completion. You stay in the mothership and watch the status table update. When a terminal finishes, you verify its output from the same window and retry any failures without losing context on the other tasks.
 
 This works well for anything with clear seams: "fix the API layer while I fix the UI layer" or "build component A while component B is being spec'd". The key discipline is narrow scope per terminal -- one task, one output, one definition of done.
