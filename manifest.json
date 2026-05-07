@@ -1,10 +1,15 @@
 {
-  "updated_at": "2026-04-09",
+  "updated_at": "2026-05-07",
   "skills": [
     {
       "name": "agentation",
       "version": 1,
       "jtbd": "Annotate a live UI element in the browser and copy DOM + component context into a Claude Code prompt"
+    },
+    {
+      "name": "decal-may-06b",
+      "version": 1,
+      "jtbd": "Mirror a live web page (or pasted HTML snippet) as idiomatic React using the project's design system -- registers a route, verifies, opens in Arc"
     },
     {
       "name": "artboardv2",
