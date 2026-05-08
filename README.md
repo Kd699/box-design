@@ -92,7 +92,7 @@ Step-by-step instructions for Claude Code to follow.
 
 ## Skills that ship a runtime
 
-Most skills here are pure markdown — Claude reads them and writes code into your project. A few skills (currently just `/v3artboard-may-08`) also ship a **runtime source folder** that needs to land in your project's `src/`. These follow a separate install path:
+Most skills here are pure markdown — Claude reads them and writes code into your project. A few skills (currently `/v3artboard-may-09` and its v8 predecessor) also ship a **runtime source folder** that needs to land in your project's `src/`. These follow a separate install path:
 
 1. Pull the skill markdown the normal way (`/box-sync-pull`).
 2. Run a one-shot `degit` command to copy the runtime files into your project.
