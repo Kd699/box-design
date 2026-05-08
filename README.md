@@ -69,6 +69,7 @@ Step-by-step instructions for Claude Code to follow.
 |-------|-------------|
 | `/agentation` | Annotate a UI element in the browser and copy DOM context into a prompt |
 | `/artboardv2` | Deterministic viewer/artboard changes -- auto-audits architecture first |
+| `/v3artboard-may-08` | **Data-driven viewer/artboard scaffold.** Ships runtime — see install guide below |
 | `/ask` | Refine ideas one question at a time (UX + eng collaborative flow) |
 | `/box-sync-pull` | Pull latest skills from this repo |
 | `/box-sync-push` | Push skill updates via PR |
@@ -87,6 +88,34 @@ Step-by-step instructions for Claude Code to follow.
 | `/spidey1` | RAG your current session for relevant context |
 | `/trans-spec` | Meeting transcript (VTT) to structured Notion spec |
 | `/verify` | Visual browser verification against design |
+
+## Skills that ship a runtime
+
+Most skills here are pure markdown — Claude reads them and writes code into your project. A few skills (currently just `/v3artboard-may-08`) also ship a **runtime source folder** that needs to land in your project's `src/`. These follow a separate install path:
+
+1. Pull the skill markdown the normal way (`/box-sync-pull`).
+2. Run a one-shot `degit` command to copy the runtime files into your project.
+3. Add any required tailwind/CSS config from the per-skill `INSTALL.md`.
+
+The runtime ends up *inside* your repo (you own it, you can edit it) — not as a `node_modules` dependency. Updates are an explicit re-fetch with a new tag.
+
+### `/v3artboard-may-08` — data-driven artboard scaffolding
+
+A `<V3Artboard spec={SPEC} />` component plus a 14-case built-in self-test. New concept labs become ~150-200 LOC of declarative spec instead of 800+ LOC of hand-rolled JSX shell.
+
+**Install:**
+
+```bash
+npx degit Kd699/box-design/skills/v3artboard-may-08/runtime#v3artboard-may-08-rc2 src/components/v3artboard
+```
+
+Full guide (Tailwind preset, theme override, minimum lab page, verify, known limits):
+[`skills/v3artboard-may-08/INSTALL.md`](./skills/v3artboard-may-08/INSTALL.md)
+
+Skill spec + spec shape:
+[`skills/v3artboard-may-08/skill.md`](./skills/v3artboard-may-08/skill.md)
+
+**What it gives you in one prop:** floating dynamic-island nav, sidebar with viewer/artboard toggle + zoom + sections + context cards, click-to-route artboard frames, prev/next state nav, keyboard shortcuts, URL hash sync, localStorage persistence, imperative ref API for cross-component nav events, optional Components tab (atom/molecule/organism isolation), CSS-variable theming, plus a `<V3ArtboardLossTest spec={SPEC} />` companion that auto-renders 14 self-tests against any spec.
 
 ## Workflow demos
 
