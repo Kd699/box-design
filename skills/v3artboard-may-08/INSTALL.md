@@ -166,7 +166,7 @@ These pre-empt the most common breakage when installing into a non-Perkbox proje
 
 Re-run degit with a newer tag:
 ```bash
-npx degit --force Kd699/box-design#v3artboard-may-09/skills/v3artboard-may-08/runtime src/components/v3artboard
+npx degit --force Kd699/box-design/skills/v3artboard-may-08/runtime#v3artboard-may-09 src/components/v3artboard
 ```
 
 The `--force` overwrites local files. **Save any project-specific edits first** — degit doesn't merge.
