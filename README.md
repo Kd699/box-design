@@ -100,23 +100,33 @@ Most skills here are pure markdown — Claude reads them and writes code into yo
 
 The runtime ends up *inside* your repo (you own it, you can edit it) — not as a `node_modules` dependency. Updates are an explicit re-fetch with a new tag.
 
-### `/v3artboard-may-08` — data-driven artboard scaffolding
+### `/v3artboard-may-09` — data-driven artboard scaffolding (latest)
 
-A `<V3Artboard spec={SPEC} />` component plus a 14-case built-in self-test. New concept labs become ~150-200 LOC of declarative spec instead of 800+ LOC of hand-rolled JSX shell.
+A `<V3Artboard spec={SPEC} />` component plus a 33-case built-in self-test. New concept labs become ~150-200 LOC of declarative spec instead of 800+ LOC of hand-rolled JSX shell.
 
 **Install:**
+
+```bash
+npx degit Kd699/box-design/skills/v3artboard-may-09/runtime#v3artboard-may-09-rc1 src/components/v3artboard
+```
+
+Full guide:
+[`skills/v3artboard-may-09/INSTALL.md`](./skills/v3artboard-may-09/INSTALL.md)
+
+Skill spec + spec shape:
+[`skills/v3artboard-may-09/skill.md`](./skills/v3artboard-may-09/skill.md)
+
+**What's in the box (one prop):** floating dynamic-island nav, sidebar with viewer/artboard/components 3-button toggle + zoom + sticky header + auto-derived sections from modes + sub-flow nesting + search box + validation banner, click-to-route artboard frames with auto-arrows between consecutive steps, frame labels that stay readable at any zoom, prev/next state nav, keyboard shortcuts, URL hash sync, localStorage persistence, imperative ref API, welcome modal with help cheatsheet, per-mode `fullScreenViewer` opt-out, optional `appShell` wrapper, `sharedProps` for cross-mode navigation, mode descriptions as tooltips, components surface with grid OR detail layout (one component at a time + "used in" footer), minimum-ceremony component registration (`{ id, render }`), CSS-variable theming, plus a `<V3ArtboardLossTest />` companion that auto-runs 33 self-tests.
+
+### `/v3artboard-may-08` — predecessor
+
+Earlier version with 14 of the 33 self-tests. Kept for projects that want a smaller surface; new work should use v9.
 
 ```bash
 npx degit Kd699/box-design/skills/v3artboard-may-08/runtime#v3artboard-may-08-rc2 src/components/v3artboard
 ```
 
-Full guide (Tailwind preset, theme override, minimum lab page, verify, known limits):
-[`skills/v3artboard-may-08/INSTALL.md`](./skills/v3artboard-may-08/INSTALL.md)
-
-Skill spec + spec shape:
-[`skills/v3artboard-may-08/skill.md`](./skills/v3artboard-may-08/skill.md)
-
-**What it gives you in one prop:** floating dynamic-island nav, sidebar with viewer/artboard toggle + zoom + sections + context cards, click-to-route artboard frames, prev/next state nav, keyboard shortcuts, URL hash sync, localStorage persistence, imperative ref API for cross-component nav events, optional Components tab (atom/molecule/organism isolation), CSS-variable theming, plus a `<V3ArtboardLossTest spec={SPEC} />` companion that auto-renders 14 self-tests against any spec.
+Full guide: [`skills/v3artboard-may-08/INSTALL.md`](./skills/v3artboard-may-08/INSTALL.md)
 
 ## Workflow demos
 
