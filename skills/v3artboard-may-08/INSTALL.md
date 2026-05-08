@@ -12,7 +12,7 @@ This installs the V3Artboard runtime into a host project's `src/`. Files are cop
 
 ```bash
 # pin to a tag for determinism
-npx degit Kd699/box-design#v3artboard-may-08-rc1/skills/v3artboard-may-08/runtime src/components/v3artboard
+npx degit Kd699/box-design/skills/v3artboard-may-08/runtime#v3artboard-may-08-rc1 src/components/v3artboard
 ```
 
 Latest (no pin, may drift):
