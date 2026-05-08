@@ -69,6 +69,7 @@ Step-by-step instructions for Claude Code to follow.
 |-------|-------------|
 | `/agentation` | Annotate a UI element in the browser and copy DOM context into a prompt |
 | `/artboardv2` | Deterministic viewer/artboard changes -- auto-audits architecture first |
+| `/v3artboard-may-08` | **Data-driven viewer/artboard scaffold.** Ships runtime — see install guide below |
 | `/ask` | Refine ideas one question at a time (UX + eng collaborative flow) |
 | `/box-sync-pull` | Pull latest skills from this repo |
 | `/box-sync-push` | Push skill updates via PR |
