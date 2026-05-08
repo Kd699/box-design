@@ -12,12 +12,12 @@ This installs the V3Artboard runtime into a host project's `src/`. Files are cop
 
 ```bash
 # pin to a tag for determinism
-npx degit Kd699/box-design/skills/v3artboard-may-08/runtime#v3artboard-may-08-rc2 src/components/v3artboard
+npx degit Kd699/box-design/skills/v3artboard-may-09/runtime#v3artboard-may-09-rc2 src/components/v3artboard
 ```
 
 Latest (no pin, may drift):
 ```bash
-npx degit Kd699/box-design/skills/v3artboard-may-08/runtime src/components/v3artboard
+npx degit Kd699/box-design/skills/v3artboard-may-09/runtime src/components/v3artboard
 ```
 
 After install, files land at:
@@ -166,7 +166,7 @@ These pre-empt the most common breakage when installing into a non-Perkbox proje
 
 Re-run degit with a newer tag:
 ```bash
-npx degit --force Kd699/box-design/skills/v3artboard-may-08/runtime#v3artboard-may-09 src/components/v3artboard
+npx degit --force Kd699/box-design/skills/v3artboard-may-09/runtime#v3artboard-may-09 src/components/v3artboard
 ```
 
 The `--force` overwrites local files. **Save any project-specific edits first** — degit doesn't merge.
